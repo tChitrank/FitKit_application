@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">FitKit</string>
+
+    <string name="category_bmi">BMI Info</string>
+
+    <string name="category_Meal">Meals</string>
+
+    <string name="category_Workout">Workout</string>
+</resources>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#001a4d</color>
+    <color name="colorPrimaryDark">#001133</color>
+    <color name="colorAccent">#2E7D32</color>
+    <color name="chatEnabled">#2E7D32</color>
+    <color name="chatDisabled">#999999</color>
+    <color name="primary_color">#4A312A</color>
+
+
+
+    <color name="bmi1">#ffff66</color>
+    <color name="bmi2">#ffff66</color>
+    <color name="bmi3">#ffff66</color>
+    <color name="bmi4">#ffff66</color>
+    <color name="bmi5">#ffff66</color>
+    <color name="bmi6">#ffff66</color>
+    <color name="bmi7">#ffff66</color>
+    <color name="bmi8">#ffff66</color>
+    <color name="bmi9">#ffff66</color>
+    <color name="bmi10">#ffff66</color>
+    <color name="bmi11">#ffff66</color>
+    <color name="bmi12">#ffff66</color>
+    <color name="bmi14">#ffff66</color>
+    <color name="bmi15">#ffff66</color>
+    <color name="bmi16">#ffff66</color>
+    <color name="bmi17">#ffff66</color>
+    <color name="bmi18">#99ff33</color>
+    <color name="bmi19">#99ff33</color>
+    <color name="bmi20">#99ff33</color>
+    <color name="bmi21">#99ff33</color>
+    <color name="bmi22">#99ff33</color>
+    <color name="bmi24">#99ff33</color>
+    <color name="bmi25">#ff9900</color>
+    <color name="bmi26">#ff9900</color>
+    <color name="bmi27">#ff9900</color>
+    <color name="bmi28">#ff9900</color>
+    <color name="bmi29">#ff9900</color>
+    <color name="bmi30plus">#ff3300</color>
+
+</resources>

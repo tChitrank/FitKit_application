@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/custom_background"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.synnapps.carouselview.CarouselView
+            android:id="@+id/carouselView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:fillColor="#C70039"
+            app:pageColor="#00000000"
+            app:radius="6dp"
+            app:slideInterval="3000"
+            app:strokeColor="#ffffff"
+            app:strokeWidth="1dp" />
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            app:cardCornerRadius="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Switch
+                    android:id="@+id/veg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Veg Only" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:text="Specify Your Meal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="Morning Meal" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <CheckBox
+                        android:id="@+id/banana"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:text="Banana"
+                        android:textSize="15sp" />
+
+                    <LinearLayout
+                        android:id="@+id/bananall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="9dp"
+                        android:layout_marginRight="6dp"
+                        android:visibility="gone">
+
+                        <Button
+                            android:id="@+id/banminus"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_marginRight="8dp"
+                            android:background="@color/colorAccent"
+                            android:text="-"
+                            android:textColor="#ffffff" />
+
+                        <TextView
+                            android:id="@+id/quantity_banana"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1"
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
+
+                        <Button
+                            android:id="@+id/banplus"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_marginLeft="8dp"
+                            android:background="@color/colorAccent"
+                            android:text="+"
+                            android:textColor="#ffffff" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <CheckBox
+                    android:id="@+id/oats"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:text="Oats*"
+                    android:textSize="15sp" />
+
+                <CheckBox
+                    android:id="@+id/whey_protein"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:text="Whey Protein*"
+                    android:textSize="15sp" />
+
+                <RelativeLayout
+                    android:id="@+id/eggsrl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <CheckBox
+                        android:id="@+id/eggs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:text="Eggs"
+                        android:textSize="15sp" />
+
+                    <LinearLayout
+                        android:id="@+id/eggsll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="9dp"
+                        android:layout_marginRight="6dp"
+                        android:visibility="gone">
+
+                        <Button
+                            android:id="@+id/eggminus"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_marginRight="8dp"
+                            android:background="@color/colorAccent"
+                            android:text="-"
+                            android:textColor="#ffffff" />
+
+                        <TextView
+                            android:id="@+id/quantity_egg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1"
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
+
+                        <Button
+                            android:id="@+id/eggplus"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_marginLeft="8dp"
+                            android:background="@color/colorAccent"
+                            android:text="+"
+                            android:textColor="#ffffff" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <CheckBox
+                        android:id="@+id/brownBread"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:text="Brown Bread"
+                        android:textSize="15sp" />
+
+                    <LinearLayout
+                        android:id="@+id/breadll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="9dp"
+                        android:layout_marginRight="6dp"
+                        android:visibility="gone">
+
+                        <Button
+                            android:id="@+id/breadminus"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_marginRight="8dp"
+                            android:background="@color/colorAccent"
+                            android:text="-"
+                            android:textColor="#ffffff" />
+
+                        <TextView
+                            android:id="@+id/quantity_bread"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1"
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
+
+                        <Button
+                            android:id="@+id/breadplus"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_marginLeft="8dp"
+                            android:background="@color/colorAccent"
+                            android:text="+"
+                            android:textColor="#ffffff" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <CheckBox
+                        android:id="@+id/Paratha"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:text="Parathas(aloo/gobi .etc)"
+                        android:textSize="15sp" />
+
+                    <LinearLayout
+                        android:id="@+id/parathall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="9dp"
+                        android:layout_marginRight="6dp"
+                        android:visibility="gone">
+
+                        <Button
+                            android:id="@+id/parathasminus"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_marginRight="8dp"
+                            android:background="@color/colorAccent"
+                            android:text="-"
+                            android:textColor="#ffffff" />
+
+                        <TextView
+                            android:id="@+id/quantity_parathas"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1"
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
+
+                        <Button
+                            android:id="@+id/parathasplus"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_marginLeft="8dp"
+                            android:background="@color/colorAccent"
+                            android:text="+"
+                            android:textColor="#ffffff" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="Afternoon Meal" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <CheckBox
+                        android:id="@+id/chapatti"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:text="Chapatti"
+                        android:textSize="15sp" />
+
+                    <LinearLayout
+                        android:id="@+id/chapatill"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="9dp"
+                        android:layout_marginRight="6dp"
+                        android:visibility="gone">
+
+                        <Button
+                            android:id="@+id/chapatiminus"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_marginRight="8dp"
+                            android:background="@color/colorAccent"
+                            android:text="-"
+                            android:textColor="#ffffff" />
+
+                        <TextView
+                            android:id="@+id/quantity_chapati"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1"
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
+
+                        <Button
+                            android:id="@+id/chapatiplus"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_marginLeft="8dp"
+                            android:background="@color/colorAccent"
+                            android:text="+"
+                            android:textColor="#ffffff" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <CheckBox
+                    android:id="@+id/RiceAft"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:text="Rice*"
+                    android:textSize="15sp" />
+
+                <CheckBox
+                    android:id="@+id/ChickenAft"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:text="Chicken*"
+                    android:visibility="gone"
+                    android:textSize="15sp" />
+
+                <CheckBox
+                    android:id="@+id/FishAft"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:text="Fish*"
+                    android:visibility="gone"
+                    android:textSize="15sp" />
+
+                <CheckBox
+                    android:id="@+id/dal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:text="Cereals(including all Dal)*"
+                    android:textSize="15sp" />
+
+                <CheckBox
+                    android:id="@+id/Curd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:text="Curd*"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="Pre Workout" />
+
+                <CheckBox
+                    android:id="@+id/BlackCoffee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:text="Black Coffee(atleast 250gm)"
+                    android:textSize="15sp" />
+
+                <CheckBox
+                    android:id="@+id/soyabean"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:text="Soyabean*"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="Post Workout" />
+
+                <CheckBox
+                    android:id="@+id/ProteinShake"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:text="Protein Shakes"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="Dinner" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <CheckBox
+                        android:id="@+id/chapattiDin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:text="Chapatti"
+                        android:textSize="15sp" />
+
+                    <LinearLayout
+                        android:id="@+id/chapatidinll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="9dp"
+                        android:layout_marginRight="6dp"
+                        android:visibility="gone">
+
+                        <Button
+                            android:id="@+id/chapatiDinminus"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_marginRight="8dp"
+                            android:background="@color/colorAccent"
+                            android:text="-"
+                            android:textColor="#ffffff" />
+
+                        <TextView
+                            android:id="@+id/quantity_chapatiDin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1"
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
+
+                        <Button
+                            android:id="@+id/chapatiDinplus"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_marginLeft="8dp"
+                            android:background="@color/colorAccent"
+                            android:text="+"
+                            android:textColor="#ffffff" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <CheckBox
+                    android:id="@+id/RiceDin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:text="Rice*"
+                    android:textSize="15sp" />
+
+                <CheckBox
+                    android:id="@+id/ChickenDin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:text="Chicken*"
+                    android:visibility="gone"
+                    android:textSize="15sp" />
+
+                <CheckBox
+                    android:id="@+id/FishDin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:text="Fish*"
+                    android:visibility="gone"
+                    android:textSize="15sp" />
+
+                <CheckBox
+                    android:id="@+id/dalDin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:text="Cereals(including all Dal)*"
+                    android:textSize="15sp" />
+
+                <CheckBox
+                    android:id="@+id/CurdDin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:text="Curd*"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="* refers the standard size of 1 bowl of 250gm."/>
+
+                <Button
+                    android:id="@+id/submitRoutine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/custom_btn"
+                    android:text="Submit" />
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</ScrollView>
